@@ -9,8 +9,11 @@ connection = psycopg2.connect(database="chinook")
 cursor = connection.cursor()
 
 # query 1 - select all records from the "Artist" table
+#cursor.execute('SELECT * FROM "Artist"')
 
-cursor.execute('SELECT * FROM "Artist"')
+# quer2 
+
+cursor.execute('SELECT "Name" FROM "Artist"')
 
 #fetch
 
